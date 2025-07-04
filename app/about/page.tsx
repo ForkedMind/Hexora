@@ -74,7 +74,7 @@ export default function AboutPage() {
               Building the <span className="gradient-text">Future</span> Together
             </h1>
             <p className="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-              Hexora is more than a platform—it's a movement. We're creating a world where 
+              Hexora is more than a platform—it&apos;s a movement. We&apos;re creating a world where
               every line of code contributes to meaningful change, where developers are fairly 
               rewarded, and where innovation knows no boundaries.
             </p>
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 rise to the top regardless of geography or background.
               </p>
               <p className="text-lg text-white/80 leading-relaxed">
-                Through blockchain technology and community governance, we're creating 
+                Through blockchain technology and community governance, we&apos;re creating
                 an ecosystem that rewards merit, fosters collaboration, and drives 
                 innovation at a scale never before possible.
               </p>

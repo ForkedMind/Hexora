@@ -73,7 +73,7 @@ export default function TokenomicsPage() {
               <span className="gradient-text">Tokenomics</span>
             </h1>
             <p className="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-              Discover the economic model behind Hexora's ecosystem. Our tokenomics are designed 
+              Discover the economic model behind Hexora&apos;s ecosystem. Our tokenomics are designed
               to reward contributors, fund development, and ensure sustainable growth.
             </p>
           </motion.div>

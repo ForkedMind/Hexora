@@ -45,7 +45,7 @@ export function TestimonialsSection() {
             What <span className="gradient-text">Contributors</span> Say
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Don't just take our word for it. Hear from developers, designers, and creators 
+            Don&apos;t just take our word for it. Hear from developers, designers, and creators
             who are already building the future with Hexora.
           </p>
         </motion.div>
@@ -73,7 +73,7 @@ export function TestimonialsSection() {
               </div>
 
               {/* Content */}
-              <p className="text-white/80 mb-6 leading-relaxed">"{testimonial.content}"</p>
+              <p className="text-white/80 mb-6 leading-relaxed">&ldquo;{testimonial.content}&ldquo;</p>
 
               {/* Author */}
               <div className="flex items-center">

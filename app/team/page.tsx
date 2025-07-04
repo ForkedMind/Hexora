@@ -85,7 +85,7 @@ export default function TeamPage() {
               Team <span className="gradient-text">Management</span>
             </h1>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Monitor your team's progress, track XP earnings, and manage task assignments. 
+              Monitor your team&apos;s progress, track XP earnings, and manage task assignments.
               Build high-performing teams with our comprehensive management tools.
             </p>
           </motion.div>

@@ -47,8 +47,8 @@ export default function NotFound() {
             transition={{ delay: 0.6 }}
             className="text-xl text-white/80 mb-12 leading-relaxed"
           >
-            The page you're looking for doesn't exist or has been moved. 
-            Let's get you back on track.
+            The page you&apos;re looking for doesn&apos;t exist or has been moved.
+            Let&apos;s get you back on track.
           </motion.p>
 
           {/* Action Buttons */}

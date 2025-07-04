@@ -26,7 +26,7 @@ export function LogosSection() {
             Trusted by <span className="gradient-text">Innovation Leaders</span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Join leading organizations already building the future with Hexora's collaborative platform.
+            Join leading organizations already building the future with Hexora&apos;s collaborative platform.
           </p>
         </motion.div>
 
