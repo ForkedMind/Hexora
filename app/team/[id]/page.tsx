@@ -28,7 +28,11 @@ export default function TeamMemberProfile() {
   
   const member = mockTeamMembers.find(m => m.id === memberId);
   const memberTasks = mockTasks.filter(task => task.assignedTo.includes(memberId));
-  
+
+  async function generateStaticParams() {
+    return mockTeamMembers.map(member => ({ id: member.id }));
+  }
+
   if (!member) {
     return (
       <div className="min-h-screen pt-16 flex items-center justify-center">
