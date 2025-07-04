@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
 import { 
   Users, 
   Filter, 
@@ -43,7 +42,6 @@ export default function TeamPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
   const [roleFilter, setRoleFilter] = useState('all');
-  const router = useRouter();
 
   const filteredMembers = mockTeamMembers.filter((member) => {
     const matchesSearch = member.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -60,10 +58,6 @@ export default function TeamPage() {
     const nextLevelXP = (level + 1) * 2000;
     const progress = ((xp - baseXP) / (nextLevelXP - baseXP)) * 100;
     return Math.max(0, Math.min(100, progress));
-  };
-
-  const handleMemberClick = (memberId: string) => {
-    router.push(`/team/${memberId}`);
   };
 
   return (
@@ -194,8 +188,7 @@ export default function TeamPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="glass rounded-xl p-6 card-hover cursor-pointer"
-                onClick={() => handleMemberClick(member.id)}
+                className="glass rounded-xl p-6 card-hover"
               >
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
@@ -271,23 +264,11 @@ export default function TeamPage() {
 
                 {/* Actions */}
                 <div className="flex gap-2">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="flex-1 glass-hover"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      handleMemberClick(member.id);
-                    }}
-                  >
+                  <Button variant="outline" size="sm" className="flex-1 glass-hover">
                     <User className="h-4 w-4 mr-2" />
                     View Profile
                   </Button>
-                  <Button 
-                    size="sm" 
-                    className="flex-1 bg-primary hover:bg-primary/90 text-navy"
-                    onClick={(e) => e.stopPropagation()}
-                  >
+                  <Button size="sm" className="flex-1 bg-primary hover:bg-primary/90 text-navy">
                     Assign Task
                   </Button>
                 </div>
