@@ -22,16 +22,20 @@ import { Progress } from '@/components/ui/progress';
 import { mockTeamMembers, mockTasks } from '@/data/mock-data';
 import Link from 'next/link';
 
+export async function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+  ];
+}
+
 export default function TeamMemberProfile() {
   const params = useParams();
   const memberId = params.id as string;
   
   const member = mockTeamMembers.find(m => m.id === memberId);
   const memberTasks = mockTasks.filter(task => task.assignedTo.includes(memberId));
-
-  async function generateStaticParams() {
-    return mockTeamMembers.map(member => ({ id: member.id }));
-  }
 
   if (!member) {
     return (
